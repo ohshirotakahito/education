@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>関数電卓 | FORMULA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">ƒ</span><span>FORMULA</span></div>
+      <div class="mode-badge"><span class="status-dot"></span> SCIENTIFIC <span class="divider"></span><span id="angle-mode-label">DEG</span></div>
+    </header>
+
+    <section class="workspace">
+      <section class="calculator-panel" aria-label="関数電卓">
+        <div class="display-wrap">
+          <div class="expression" id="expression">0</div>
+          <div class="result-line"><span class="equals">=</span><output id="result">0</output></div>
+        </div>
+
+        <div class="toolbar">
+          <button class="tool-button active" data-action="angle">DEG</button>
+          <button class="tool-button" data-action="memory-clear">MC</button>
+          <button class="tool-button" data-action="memory-recall">MR</button>
+          <button class="tool-button" data-action="memory-add">M+</button>
+          <button class="tool-button" data-action="memory-subtract">M−</button>
+          <span class="memory-indicator" id="memory-indicator">M: 0</span>
+        </div>
+
+        <div class="function-pad">
+          <button class="key key-function" data-value="sin(">sin</button>
+          <button class="key key-function" data-value="cos(">cos</button>
+          <button class="key key-function" data-value="tan(">tan</button>
+          <button class="key key-function" data-value="log(">log</button>
+          <button class="key key-function" data-value="ln(">ln</button>
+
+          <button class="key key-function" data-value="asin(">sin⁻¹</button>
+          <button class="key key-function" data-value="acos(">cos⁻¹</button>
+          <button class="key key-function" data-value="atan(">tan⁻¹</button>
+          <button class="key key-function" data-value="sqrt(">√</button>
+          <button class="key key-function" data-value="^2">x²</button>
+
+          <button class="key key-function" data-value="π">π</button>
+          <button class="key key-function" data-value="e">e</button>
+          <button class="key key-function" data-value="^">xʸ</button>
+          <button class="key key-function" data-value="(">(</button>
+          <button class="key key-function" data-value=")">)</button>
+
+          <button class="key key-function" data-value="sinh(">sinh</button>
+          <button class="key key-function" data-value="cosh(">cosh</button>
+          <button class="key key-function" data-value="tanh(">tanh</button>
+          <button class="key key-function" data-value="abs(">abs</button>
+          <button class="key key-function" data-value="exp(">eˣ</button>
+
+          <button class="key key-function" data-value="floor(">floor</button>
+          <button class="key key-function" data-value="ceil(">ceil</button>
+          <button class="key key-function" data-value="10^(">10ˣ</button>
+          <button class="key key-function" data-value="inv(">1/x</button>
+          <button class="key key-function" data-value="fact(">n!</button>
+        </div>
+
+        <div class="keypad">
+          <button class="key key-muted" data-action="clear">AC</button>
+          <button class="key key-muted" data-action="backspace">⌫</button>
+          <button class="key key-operator" data-value="%">%</button>
+          <button class="key key-operator" data-value="÷">÷</button>
+
+          <button class="key" data-value="7">7</button>
+          <button class="key" data-value="8">8</button>
+          <button class="key" data-value="9">9</button>
+          <button class="key key-operator" data-value="×">×</button>
+
+          <button class="key" data-value="4">4</button>
+          <button class="key" data-value="5">5</button>
+          <button class="key" data-value="6">6</button>
+          <button class="key key-operator" data-value="−">−</button>
+
+          <button class="key" data-value="1">1</button>
+          <button class="key" data-value="2">2</button>
+          <button class="key" data-value="3">3</button>
+          <button class="key key-operator" data-value="+">+</button>
+
+          <button class="key key-wide" data-value="0">0</button>
+          <button class="key" data-value=".">.</button>
+          <button class="key key-equals" data-action="calculate">=</button>
+        </div>
+      </section>
+
+      <aside class="history-panel">
+        <div class="section-heading"><span>CALCULATION LOG</span><button class="clear-history" id="clear-history">CLEAR ALL</button></div>
+        <div class="history-list" id="history-list">
+          <div class="empty-history" id="empty-history"><span>∑</span><p>計算履歴はここに表示されます</p></div>
+        </div>
+        <div class="tip"><span class="tip-icon">i</span><span>キーボード入力にも対応しています</span></div>
+      </aside>
+    </section>
+    <footer class="footer"><span>PRECISION ENGINE / 12 DIGITS</span><span>BUILD 01.24</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+name,name_ja,formula,smiles,regions,note
+ethyl acetate,酢酸エチル,C4H8O2,CCOC(C)=O,alkyl|hetero,典型的にはエチル基とアセチルメチルの3種類のシグナル。
+methyl propionate,プロピオン酸メチル,C4H8O2,CCC(=O)OC,alkyl|hetero,メトキシ基とエチル基が期待されます。
+butyric acid,酪酸,C4H8O2,CCCC(=O)O,alkyl|acid,酸性プロトンは交換や条件により見えない場合があります。
+isobutyric acid,イソ酪酸,C4H8O2,CC(C)C(=O)O,alkyl|acid,等価な2つのメチル基とメチンが特徴です。
+"1,4-dioxane","1,4-ジオキサン",C4H8O2,C1COCCO1,hetero,対称性が高く主シグナルは少数です。
+acetone,アセトン,C3H6O,CC(C)=O,alkyl,等価な2つのメチル基による主シグナル。
+propanal,プロパナール,C3H6O,CCC=O,alkyl|aldehyde,9–10 ppm付近のアルデヒドプロトンが重要です。
+allyl alcohol,アリルアルコール,C3H6O,C=CCO,hetero|alkene,アルケン領域と酸素隣接メチレンが期待されます。
+ethanol,エタノール,C2H6O,CCO,alkyl|hetero,OHは交換により位置と形状が変化します。
+dimethyl ether,ジメチルエーテル,C2H6O,COC,hetero,対称性により主シグナルは1種類です。
+benzene,ベンゼン,C6H6,c1ccccc1,aromatic,対称性が高く芳香族領域に単一の主シグナル。
+toluene,トルエン,C7H8,Cc1ccccc1,alkyl|aromatic,ベンジルメチルと芳香族プロトンが期待されます。
+ethylbenzene,エチルベンゼン,C8H10,CCc1ccccc1,alkyl|aromatic,エチル基と一置換ベンゼン環。
+xylene,キシレン,C8H10,Cc1ccccc1C,alkyl|aromatic,異性体により芳香族部のパターンが異なります。
+anisole,アニソール,C7H8O,COc1ccccc1,hetero|aromatic,メトキシ基と芳香族領域が期待されます。
+benzyl alcohol,ベンジルアルコール,C7H8O,OCC1=CC=CC=C1,hetero|aromatic,ベンジル位メチレンと芳香族領域。
+benzaldehyde,ベンズアルデヒド,C7H6O,O=Cc1ccccc1,aromatic|aldehyde,アルデヒドと芳香族プロトンが明瞭です。
+phenol,フェノール,C6H6O,Oc1ccccc1,aromatic,OHは溶媒と温度で大きく変化します。
+acetic acid,酢酸,C2H4O2,CC(=O)O,alkyl|acid,酸性プロトンは幅広くなる場合があります。
+dimethyl carbonate,炭酸ジメチル,C3H6O3,COC(=O)OC,hetero,対称性によりメトキシ基は等価です。

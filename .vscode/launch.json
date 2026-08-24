@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "NMRアプリを起動",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "python": "${workspaceFolder}\\nmr-structure\\.venv\\Scripts\\python.exe",
+      "cwd": "${workspaceFolder}\\nmr-structure",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "サイズ提案アプリを起動",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "python": "${workspaceFolder}\\size-recommender\\.venv\\Scripts\\python.exe",
+      "cwd": "${workspaceFolder}\\size-recommender",
+      "console": "integratedTerminal"
+    }
+  ]
+}
