@@ -7,6 +7,7 @@
 - `vocabulary`: 英単語トレーナー
 - `nmr-structure`: NMRスペクトルから構造候補を探すStreamlitアプリ
 - `size-recommender`: Tシャツサイズ提案アプリ
+- `titanic-predictor`: Titanicの生存者を予測する機械学習モデル
 - `tshirt-store`: Tシャツ販売サイトのデモ
 
 各アプリの起動方法は、それぞれのフォルダ内のREADMEまたは起動ファイルを参照してください。
